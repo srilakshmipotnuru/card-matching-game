@@ -1,5 +1,3 @@
-import React from "react";
-
 interface cardProps {
     image?: string;
     isFlipped?: boolean;

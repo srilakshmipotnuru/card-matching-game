@@ -1,4 +1,4 @@
-import React, { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Card from "./Card"
 import bird from "../assets/bird.svg"
 import butterfly from "../assets/butterfly.svg"

@@ -1,4 +1,3 @@
-import React from "react";
 import sparkle from "../assets/sparkle.svg"
 interface popUpProps {
     showPopUp: boolean

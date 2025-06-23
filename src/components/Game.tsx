@@ -82,7 +82,7 @@ const Game = (props: gameProps) => {
     }
 
     return (
-        <div className="grid grid-cols-4 gap-y-6 gap-x-2 p-6 max-w-[60%] mx-auto items-center justify-center">
+        <div className="grid grid-cols-4  gap-4 lg:gap-8 sm:gap-2 p-4 w-full max-w-[90%] lg:max-w-[60%] mx-auto items-center justify-center">
             {shuffledImages.map((img,index)=>(
                 <Card key={index} image={img} isFlipped={flipped[index]} onClick={()=> handleClick(index)}/>
             ))}

@@ -10,7 +10,7 @@ const {image , isFlipped , onClick} = Props
 
 return (
    <div
-  className="w-[22vw] h-[30vw] max-w-[200px] max-h-[150px] perspective-1000 cursor-pointer"
+  className="w-full aspect-[3/2] max-w-[80px] sm:max-w-[100px] md:max-w-[120px] lg:max-w-[200px] perspective-1000 cursor-pointer"
   onClick={onClick}
 >
   <div
@@ -24,11 +24,11 @@ return (
       <img
         src={image}
         alt="card"
-        className="w-full h-full object-contain p-6"
+        className="w-full h-full object-contain p-1 sm:p-3"
       />
     </div>
      {/* BACK FACE (❓ side) */}
-    <h1 className="absolute inset-0 w-full h-full backface-hidden  bg-my-secondary-color rounded-2xl flex items-center justify-center text-5xl font-bold">
+    <h1 className="absolute inset-0 w-full h-full backface-hidden  bg-my-secondary-color rounded-2xl flex items-center justify-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
       ?
     </h1>
 

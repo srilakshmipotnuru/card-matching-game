@@ -9,10 +9,10 @@ const PopUp = (props:popUpProps)=>{
     if(!showPopUp) return null;
     return(
        <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
-        <div className="bg-my-primary-color rounded-2xl border-4 border-my-bg-color w-[30%] h-[30%] p-10 flex flex-col items-center gap-4">
+        <div className="bg-my-primary-color rounded-2xl border-4 border-my-bg-color w-[30%] h-[30%] min-w-[200px] p-4 md:p-10 lg:p-10 sm:p-4 flex flex-col items-center gap-4">
             <div className="flex flex-row items-center gap-4">
                 <img src={sparkle} alt="sparkle" className="w-8 h-8"/>
-                <p className="text-my-secondary-color text-3xl font-bold mb-2 text-center "> Well done </p> 
+                <p className="text-my-secondary-color sm:text-3xl md:text-3xl lg:text-3xl text-xl font-bold mb-2 text-center "> Well done </p> 
                 <img src={sparkle} alt="sparkle" className="w-8 h-8"/>
             </div>
             <p className="text-my-secondary-color text-center">you found all the pairs!!</p>

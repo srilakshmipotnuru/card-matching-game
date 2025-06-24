@@ -2,6 +2,7 @@ import {  useState } from 'react'
 import './App.css'
 import Game from './components/Game'
 import Header from './components/Header'
+import Footer from './components/Footer';
 
 {/* <a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by srip - Flaticon</a> */}
 // --text: #e2dff9;
@@ -25,6 +26,7 @@ function App() {
     <div className='p-10 flex-row gap-8'>
       <Header enableSound={soundEnabled} onClickSoundButton={soundChange} />
       <Game enableSound={soundEnabled}/>
+      <Footer/>
     </div>
   )
 }
